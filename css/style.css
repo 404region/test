@@ -1,0 +1,81 @@
+/* Обнуление стилей */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0; /* обнуляем внешние отступы */
+    padding: 0; /* обнуляем внутренние отступы */
+    border: 0; /* убираем бордюры */
+    outline: 0; /* убираем контуры */
+    font-size: 100%; /* задаем базовый размер шрифта, значение по умолчанию = 16px */
+    vertical-align: baseline; /* устанавливаем базовое вертикальное выравнивание */
+    background: transparent; /* устанавливаем фон прозрачным */
+    font-family: Arial, Verdana;
+}
+ul,li{
+    list-style: none;
+}
+#wm-main-block {
+    width: 50%;
+    margin: 0 auto;
+    padding: 2em 0 2em 0;
+}
+.qr-block-question {
+    font-weight: bold;
+}
+.mb-header a{
+    text-decoration: none;
+    font-weight: 700;
+}
+.mb-header a:link, a:visited{
+    color: #000000;
+}
+
+.mb-header a:hover {
+    color: #FF0000;
+}
+.blank-discript-header {
+    font-weight: 700;
+    margin-bottom: 2em;
+}
+.question-row {
+    border-bottom: 1px solid #e4e4e4;
+    margin-bottom: 20px; //TODO: 1) возможно необходимо изменить на em 2)вынести в отдельный класс?
+}
+.blank-descript-block {
+    margin-bottom: 20px; //TODO: 1) возможно необходимо изменить на em 2)вынести в отдельный класс?
+}
+.qr-block area{
+    width: 100%;
+    padding-left: 0.3em;
+    color: #000000;
+    /*
+    margin: 0;
+    outline: 0 none;
+    -moz-box-sizing: border-box;
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    border-color: #A3A3A3 #C6C6C6 #E5E5E5;
+    */
+
+    font: 100% Arial,sans-serif;
+}
+.qr-npp{
+    width: 25%;
+    float: left;
+    font-style: italic;
+}
+.qr-block{
+    margin-left: 27%;
+    width: 73%;
+    margin-bottom: 20px; //TODO: 1) возможно необходимо изменить на em 2)вынести в отдельный класс?
+}
+.qr-block-question {
+    color: #333333;
+    margin-bottom: 20px; //TODO: 1) возможно необходимо изменить на em 2)вынести в отдельный класс?
+}
