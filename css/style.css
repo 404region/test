@@ -52,13 +52,23 @@ ul,li{
 .question-row {
     font-size: 0.8em;
     border-bottom: 1px solid #e4e4e4;
-    margin-bottom: 20px; //TODO: 1) возможно необходимо изменить на em 2)вынести в отдельный класс?
+    margin-bottom: 20px; /*TODO: 1) возможно необходимо изменить на em 2)вынести в отдельный класс?*/ 
+    overflow: hidden;
+    cursor: pointer;
+    height: 1.2em;
+}
+.question-row-open {
+    height: auto;
+}
+.question-row:hover {
+    /*border: 2px solid yellow;*/
+   /*background-color: yellow;*/
 }
 .blank-descript-block {
-    margin-bottom: 20px; //TODO: 1) возможно необходимо изменить на em 2)вынести в отдельный класс?
+    margin-bottom: 20px; /*TODO: 1) возможно необходимо изменить на em 2)вынести в отдельный класс?*/
 }
 .qr-block textarea{
-    width: 100%;
+    width: 90%;
     padding-left: 0.3em;
     color: #000000;
     font: 100% Arial,sans-serif;
@@ -71,12 +81,16 @@ ul,li{
 .qr-block{
     margin-left: 27%;
     width: 73%;
-    margin-bottom: 20px; //TODO: 1) возможно необходимо изменить на em 2)вынести в отдельный класс?
+    margin-bottom: 20px; /*TODO: 1) возможно необходимо изменить на em 2)вынести в отдельный класс?*/
 }
 .qr-block-question {
     color: #333333;
-    margin-bottom: 20px; //TODO: 1) возможно необходимо изменить на em 2)вынести в отдельный класс?
+    margin-bottom: 20px; /*TODO: 1) возможно необходимо изменить на em 2)вынести в отдельный класс?*/
 }
 .qr-block-question label {
     font-weight: normal;
 }
+/*
+.qr-icon {
+}
+*/
