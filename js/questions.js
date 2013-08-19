@@ -1,14 +1,14 @@
 //QuestionExample
 function Question(question, answer) {
     this.question = question || '';
-    this.answer = answer || '<textarea cols="55" rows="4"></textarea>';
+    this.answer = answer || '<textarea cols="30" rows="4"></textarea>';
     this.npp = Question.prototype.npp++;
 };
 
 Question.prototype.npp = 1;
 
 
-var qArr = ['Год рождения.', 'Город, в котором вы живёте.', 'Вуз, факультет, специальность, кафедра.', 'Год окончания вуза.', 'Уровень владения английским языком:',
+var qArr = ['Год рождения.', 'Город, в котором вы живёте.', 'Вуз, факультет, специальность, кафедра.', 'Год окончания вуза.', 'Уровень владения английским языком: <p><input type="checkbox" id="a5_1" value="1" name="q5"><label for="a5_1"> начальный;</label></p><p><input type="checkbox" id="a5_2" value="2" name="q5"><label for="a5_2"> средний;</label></p><p><input type="checkbox" id="a5_3" value="3" name="q5"><label for="a5_3"> свободное владение.</label></p>',
             'Чего вы ожидаете от участия в Школе?', 'Откуда вы о нас узнали?',
             'Сколько времени вы были бы готовы уделять стажировке или работе в Яндексе?',
             'Расскажите о вашем опыте разработки. Нам будет интересно всё — как серьезный интерфейс, так и просто домашняя страничка.',
@@ -21,7 +21,7 @@ var qArr = ['Год рождения.', 'Город, в котором вы жи
 var questionArr = [];
 
 for(var i=0; i<qArr.length; i++) {
-    questionArr[i] = new Question(
-        qArr[i]
-    );
+    questionArr[i] = new Question(qArr[i]);
 }
+
+//questionArr[4].answer = '<p><input type="checkbox" id="a5_1" value="1" name="q5"><label for="a5_1"> начальный;</label></p><p><input type="checkbox" id="a5_2" value="2" name="q5"><label for="a5_2"> средний;</label></p><p><input type="checkbox" id="a5_3" value="3" name="q5"><label for="a5_3"> свободное владение.</label></p><textarea cols="55" rows="4"></textarea>';
